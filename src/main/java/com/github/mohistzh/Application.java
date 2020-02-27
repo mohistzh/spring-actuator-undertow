@@ -1,15 +1,15 @@
 package com.github.mohistzh;
 
+import com.github.mohistzh.config.annotation.MyUndertow;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @Author Jonathan
  * @Date 2020/2/27
  **/
-@SpringBootApplication
-@ComponentScan("com.github.mohistzh")
+@SpringBootApplication(scanBasePackages = "com.github.mohistzh")
+@MyUndertow
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
