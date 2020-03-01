@@ -1,2 +1,2 @@
-# spring-undertow-metrics
-Spring, Actuator, Prometheus, Undertow, and Metrics
+# An integration example of Spring, Actuator, Prometheus, Undertow, and Dockerization
+
