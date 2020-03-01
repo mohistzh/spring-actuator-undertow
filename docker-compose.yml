@@ -2,11 +2,10 @@ version: '3'
 
 services:
   spring-undertow-metrics-container:
-    image: spring-undertow-metrics
     build:
-      context: ./
+      context: .
       dockerfile: Dockerfile
-    volumes:
-      - /data/spring-undertow-metrics-app
+    image: spring-undertow-metrics
     ports:
       - "8089:8089"
+    restart: always
